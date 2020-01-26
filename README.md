@@ -1,2 +1,0 @@
-# ryanseamons
-Personal Site

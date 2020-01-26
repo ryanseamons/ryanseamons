@@ -1,14 +1,28 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<head>
-    <title>Ryan Seamons</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png">
-    <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-vlOMx0hKjUCl4WzuhIhSNZSm2yQCaf0mOU1hEDK/iztH3gU4v5NMmJln9273A6Jz" crossorigin="anonymous"> -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon.png">
+
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="./assets/fonts/Feather/feather.css">
+    <link rel="stylesheet" href="./assets/libs/flickity/dist/flickity.min.css">
+    <link rel="stylesheet" href="./assets/libs/flickity-fade/flickity-fade.css">
+    <link rel="stylesheet" href="./assets/libs/aos/dist/aos.css">
+    <link rel="stylesheet" href="./assets/libs/jarallax/dist/jarallax.css">
+    <link rel="stylesheet" href="./assets/libs/highlightjs/styles/vs2015.css">
+    <link rel="stylesheet" href="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
+
+    <!-- Map -->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="./assets/css/theme.min.css">
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
 
     <!-- Google Analytics Script -->
@@ -40,71 +54,681 @@
         g.clearUserCookie=function(){};
     })(window,document,window['_fs_namespace'],'script','user');
     </script>
-</head>
 
-<body>
-    <section class="h-100">
-        <div class="container pr-0 h-100">
-            <div class="row align-items-center h-100">
-                <div class="col-12 col-md-5 col-lg-5 pr-5 mb-5">
-                    <!-- Heading -->
-                    <h1 class="text-center text-md-left">
-                        <br>Product Manager. <br>Husband. <br>Father.
-                    </h1>
-                    <!-- Text -->
-                    <p class="text-center text-md-left text-muted mt-5">
-                        I founded <a href="https://sprintwell.com" target="_blank" class="link">Sprintwell</a> to help teams work with joy.
-                    </p>
-                    <p class="text-center text-md-left text-muted mb-5">
-                        Formerly Product Manager at LinkedIn, Director of Product at Degreed. Homeschooling father of 5.
-                    </p>
-                    <div class="social text-md-left text-center">
-                        <a href="https://ryanseamons.com"><img alt="Ryan Seamons" src="https://miro.medium.com/fit/c/256/256/0*2qyGqNHdt9XBeK_2.jpeg" class="rounded-circle" width="34" height="34"></a>
-                        <a href="https://medium.com/@ryanseamons" target="_blank"><i class="fab fa-2x fa-medium-m"></i></a>
-                        <a href="http://twitter.com/ryanseamons" target="_blank"><i class="fab fa-2x fa-twitter"></i></a>
-                        <a href="http://linkedin.com/in/ryanseamons" target="_blank"><i class="fab fa-2x fa-linkedin"></i></a>
-                    </div>
-                    <!--             <div class="text-center text-md-left">
-              <a href="mailto:ryanseamons@gmail.com?subject=Hello%20from%20your%website" class="w-button contact-button">
-                Say Hello</i>
-              </a>
+    <title>Ryan Seamons</title>
+  </head>
+  <body>
+
+    <!-- MODALS
+    ================================================== -->
+    <!-- Example -->
+    <div class="modal fade" id="modalExample" tabindex="-1" role="dialog" aria-labelledby="modalExampleTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+
+            <!-- Close -->
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+
+            <!-- Image -->
+            <div class="text-center">
+              <img src="../assets/img/illustrations/illustration-1.png" alt="..." class="img-fluid mb-3" style="width: 200px;">
             </div>
- -->
+
+            <!-- Heading -->
+            <h2 class="font-weight-bold text-center mb-1" id="modalExampleTitle">
+              Schedule a demo with us
+            </h2>
+
+            <!-- Text -->
+            <p class="font-size-lg text-center text-muted mb-6 mb-md-8">
+              We can help you solve company communication.
+            </p>
+
+            <!-- Form -->
+            <form>
+              <div class="row">
+                <div class="col-12 col-md-6">
+
+                  <!-- First name -->
+                  <div class="form-label-group">
+                    <input type="text" class="form-control form-control-flush" id="registrationFirstNameModal" placeholder="First name">
+                    <label for="registrationFirstNameModal">First name</label>
+                  </div>
+
                 </div>
-                <div class="col-12 col-md-7 col-lg-7 h-100 color-background align-items-center" style="display: flex">
-                    <div class="col-9 offset-md-2">
-                        <h2 class="text-white">Join Product & Parenting.</h2>
-                        <p class="text-white">Receive experience-based tips to help you grow as a product leader, inspire others through great management, and make parenting a joy.</p>
-                        <p class="text-white">A free newsletter with practical links and advice from what I learn about <strong>product</strong> as I grow a company and <strong>parenting</strong> as I raise my 5 children.</p>
-                        <br>
-                        <!-- <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" target="_blank" class="btn btn-primary mb-2">Sign Up</a> -->
-                        <!-- <div class="collapse" id="collapseExample"> -->
-                            <iframe width="480" height="320" src="https://ryanseamons.substack.com/embed?no_border=1" frameborder="0" scrolling="no"></iframe>
-                        <!-- </div> -->
-                        <br>
-                        <small class="text-muted text-sm" style="opacity: .8">Read an example <a href="https://ryanseamons.substack.com/p/what-can-you-accomplish-in-10-minutes" target="_blank">here</a></small>
-                        <br><br>
-                        <small class="text-muted text-sm" style="opacity: .8">Topics include: product management, product leadership, company culture, management, parenting, education, career development, and more.</small>
-                    </div>
+                <div class="col-12 col-md-6">
+
+                  <!-- Last name -->
+                  <div class="form-label-group">
+                    <input type="text" class="form-control form-control-flush" id="registrationLastNameModal" placeholder="Last name">
+                    <label for="registrationLastNameModal">Last name</label>
+                  </div>
+
                 </div>
-            </div> <!-- / .row -->
-        </div> <!-- / .container -->
-    </section>
-    <!-- <section style="background-color: #f4f3f3;">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <h1><br>What I'm Learning</h1>
+              </div>
+              <div class="row">
+                <div class="col-12 col-md-6">
+
+                  <!-- Email -->
+                  <div class="form-label-group">
+                    <input type="email" class="form-control form-control-flush" id="registrationEmailModal" placeholder="Email">
+                    <label for="registrationEmailModal">Email</label>
+                  </div>
+
                 </div>
-            </div>
+                <div class="col-12 col-md-6">
+
+                  <!-- Password -->
+                  <div class="form-label-group">
+                    <input type="password" class="form-control form-control-flush" id="registrationPasswordModal" placeholder="Password">
+                    <label for="registrationPasswordModal">Password</label>
+                  </div>
+
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+              
+                  <!-- Submit -->
+                  <button class="btn btn-block btn-primary mt-3 lift">
+                    Request a demo
+                  </button>
+
+                </div>
+              </div>
+            </form>
+      
+          </div>
         </div>
-    </section> -->
-</body>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script>
-    $("iframe").contents().find(".embed-page").attr("style","border: none;");
-</script>
+      </div>
+    </div>
 
+    <!-- Signup: Horizontal  -->
+    <div class="modal fade" id="modalSignupHorizontal" tabindex="-1" role="dialog" aria-labelledby="modalSignupHorizontalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="card card-row">
+            <div class="row no-gutters">
+              <div class="col-12 col-md-6 bg-cover card-img-left" style="background-image: url(./assets/img/photos/photo-8.jpg);">
+
+                <!-- Image (placeholder) -->
+                <img src="./assets/img/photos/photo-8.jpg" alt="..." class="img-fluid d-md-none invisible">
+
+                <!-- Shape -->
+                <div class="shape shape-right shape-fluid-y svg-shim text-white d-none d-md-block">
+                  <svg viewBox="0 0 112 690" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M116 0H51V172C76 384 0 517 0 517V690H116V0Z" fill="currentColor"/>
+                  </svg>
+                </div>
+
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="card-body">
+
+                  <!-- Close -->
+                  <button type="button" class="modal-close close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+              
+                  <!-- Heading -->
+                  <h2 class="mb-0 font-weight-bold text-center" id="modalSignupHorizontalTitle">
+                    Sign Up
+                  </h2>
+
+                  <!-- Text -->
+                  <p class="mb-6 text-center text-muted">
+                    Simplify your workflow in minutes.
+                  </p>
+
+                  <!-- Form -->
+                  <form class="mb-6">
+
+                    <!-- Email -->
+                    <div class="form-group">
+                      <label class="sr-only" for="modalSignupHorizontalEmail">
+                        Your email
+                      </label>
+                      <input type="email" class="form-control" id="modalSignupHorizontalEmail" placeholder="Your email">
+                    </div>
+
+                    <!-- Password -->
+                    <div class="form-group mb-5">
+                      <label class="sr-only" for="modalSignupHorizontalPassword">
+                        Create a password
+                      </label>
+                      <input type="password" class="form-control" id="modalSignupHorizontalPassword" placeholder="Create a password">
+                    </div>
+
+                    <!-- Submit -->
+                    <button class="btn btn-block btn-primary" type="submit">
+                      Sign up
+                    </button>
+
+                  </form>
+
+                  <!-- Text -->
+                  <p class="mb-0 font-size-sm text-center text-muted">
+                    Already have an account? <a href="./signin-illustration.html">Log in</a>.
+                  </p>
+
+                </div>
+              </div>
+
+            </div> <!-- / .row -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Signup: Vertical  -->
+    <div class="modal fade" id="modalSignupVertical" tabindex="-1" role="dialog" aria-labelledby="modalSignupVerticalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="card">
+
+            <!-- Close -->
+            <button type="button" class="modal-close close text-white" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+
+            <!-- Image -->
+            <img src="./assets/img/photos/photo-7.jpg" alt="..." class="card-img-top">
+
+            <!-- Shape -->
+            <div class="position-relative">
+              <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
+                <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0V480H2880V0H2160Z" fill="currentColor"/>
+                </svg>
+              </div>
+            </div>
+
+            <!-- Body -->
+            <div class="card-body">
+
+              <!-- Heading -->
+              <h2 class="mb-0 font-weight-bold text-center" id="modalSignupVerticalTitle">
+                Sign Up
+              </h2>
+
+              <!-- Text -->
+              <p class="mb-6 text-center text-muted">
+                Simplify your workflow in minutes.
+              </p>
+
+              <!-- Form -->
+              <form class="mb-6">
+
+                <!-- Email -->
+                <div class="form-group">
+                  <label class="sr-only" for="modalSignupVerticalEmail">
+                    Your email
+                  </label>
+                  <input type="email" class="form-control" id="modalSignupVerticalEmail" placeholder="Your email">
+                </div>
+
+                <!-- Password -->
+                <div class="form-group mb-5">
+                  <label class="sr-only" for="modalSignupVerticalPassword">
+                    Create a password
+                  </label>
+                  <input type="password" class="form-control" id="modalSignupVerticalPassword" placeholder="Create a password">
+                </div>
+
+                <!-- Submit -->
+                <button class="btn btn-block btn-primary" type="submit">
+                  Sign up
+                </button>
+
+              </form>
+
+              <!-- Text -->
+              <p class="mb-0 font-size-sm text-center text-muted">
+                Already have an account? <a href="./signin-illustration.html">Log in</a>.
+              </p>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Signin: Horizontal  -->
+    <div class="modal fade" id="modalSigninHorizontal" tabindex="-1" role="dialog" aria-labelledby="modalSigninHorizontalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="card card-row">
+            <div class="row no-gutters">
+              <div class="col-12 col-md-6 bg-cover card-img-left" style="background-image: url(./assets/img/photos/photo-1.jpg);">
+
+                <!-- Image (placeholder) -->
+                <img src="./assets/img/photos/photo-1.jpg" alt="..." class="img-fluid d-md-none invisible">
+
+                <!-- Shape -->
+                <div class="shape shape-right shape-fluid-y svg-shim text-white d-none d-md-block">
+                  <svg viewBox="0 0 112 690" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M116 0H51V172C76 384 0 517 0 517V690H116V0Z" fill="currentColor"/>
+                  </svg>
+                </div>
+
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="card-body">
+
+                  <!-- Close -->
+                  <button type="button" class="modal-close close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+              
+                  <!-- Heading -->
+                  <h2 class="mb-0 font-weight-bold text-center" id="modalSigninHorizontalTitle">
+                    Sign In
+                  </h2>
+
+                  <!-- Text -->
+                  <p class="mb-6 text-center text-muted">
+                    Simplify your workflow in minutes.
+                  </p>
+
+                  <!-- Form -->
+                  <form class="mb-6">
+
+                    <!-- Email -->
+                    <div class="form-group">
+                      <label class="sr-only" for="modalSigninHorizontalEmail">
+                        Your email
+                      </label>
+                      <input type="email" class="form-control" id="modalSigninHorizontalEmail" placeholder="Your email">
+                    </div>
+
+                    <!-- Password -->
+                    <div class="form-group mb-5">
+                      <label class="sr-only" for="modalSigninHorizontalPassword">
+                        Create a password
+                      </label>
+                      <input type="password" class="form-control" id="modalSigninHorizontalPassword" placeholder="Create a password">
+                    </div>
+
+                    <!-- Submit -->
+                    <button class="btn btn-block btn-primary" type="submit">
+                      Sign in
+                    </button>
+
+                  </form>
+
+                  <!-- Text -->
+                  <p class="mb-0 font-size-sm text-center text-muted">
+                    Don't have an account yet? <a href="./signin-illustration.html">Sign up</a>.
+                  </p>
+
+                </div>
+              </div>
+
+            </div> <!-- / .row -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Signup: Vertical  -->
+    <div class="modal fade" id="modalSigninVertical" tabindex="-1" role="dialog" aria-labelledby="modalSigninVerticalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="card">
+
+            <!-- Close -->
+            <button type="button" class="modal-close close text-white" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+
+            <!-- Image -->
+            <img src="./assets/img/photos/photo-21.jpg" alt="..." class="card-img-top">
+
+            <!-- Shape -->
+            <div class="position-relative">
+              <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
+                <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0V480H2880V0H2160Z" fill="currentColor"/>
+                </svg>
+              </div>
+            </div>
+
+            <!-- Body -->
+            <div class="card-body">
+
+              <!-- Heading -->
+              <h2 class="mb-0 font-weight-bold text-center" id="modalSigninVerticalTitle">
+                Sign In
+              </h2>
+
+              <!-- Text -->
+              <p class="mb-6 text-center text-muted">
+                Simplify your workflow in minutes.
+              </p>
+
+              <!-- Form -->
+              <form class="mb-6">
+
+                <!-- Email -->
+                <div class="form-group">
+                  <label class="sr-only" for="modalSigninVerticalEmail">
+                    Your email
+                  </label>
+                  <input type="email" class="form-control" id="modalSigninVerticalEmail" placeholder="Your email">
+                </div>
+
+                <!-- Password -->
+                <div class="form-group mb-5">
+                  <label class="sr-only" for="modalSigninVerticalPassword">
+                    Create a password
+                  </label>
+                  <input type="password" class="form-control" id="modalSigninVerticalPassword" placeholder="Create a password">
+                </div>
+
+                <!-- Submit -->
+                <button class="btn btn-block btn-primary" type="submit">
+                  Sign in
+                </button>
+
+              </form>
+
+              <!-- Text -->
+              <p class="mb-0 font-size-sm text-center text-muted">
+                Don't have an account yet? <a href="./signin-illustration.html">Sign up</a>.
+              </p>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NAVBAR
+    ================================================== -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+      <div class="container-fluid">
+
+        <!-- Brand -->
+        <a class="navbar-brand text-uppercase" href="./">
+          <!-- Ryan Seamons -->
+          <img src="./assets/img/full-signature.svg" class="navbar-brand-img signature-color" alt="...">
+        </a>
+
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+
+          <!-- Toggler -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fe fe-x"></i>
+          </button>
+
+          <!-- Navigation -->
+          <ul class="navbar-nav ml-auto text-uppercase">
+            <li class="nav-item">
+              <a class="nav-link" id="navbarLandings" href="articles">
+                Articles
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="navbarLandings" href="vault">
+                The Vault
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="navbarLandings" href="events">
+                Events
+              </a>
+            </li>
+          </ul>
+
+          <!-- Button -->
+          <a class="ml-auto text-uppercase" href="https://ryanseamons.substack.com/" target="_blank">
+            The Newsletter →
+          </a>
+
+        </div>
+
+      </div>
+    </nav>
+
+
+    <!-- WELCOME
+    ================================================== -->
+    <section class="pt-4 pt-md-11 mb-10">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-6 col-lg-8 offset-lg-2 order-md-1" data-aos="fade-up">
+
+            <h1 class="display-2 font-weight-bold text-center mb-10">
+              Most people have <span class="text-primary">no idea</span> what they want. 
+            </h1>
+
+            <p>We are bad at predicting what will make us happy. This especially impacts work and family relationships.</p>
+            <p>Leaders ruin their teams when they lack clarity about their goals, communicate them poorly, then wonder why their employees burnout.</p>
+            <p>Couples struggle in marriage when they don't know what they want or don't know how to ask for what they want.</p> 
+            <p>Figuring out what you want and how to ask for it is a critial skill for finding fulfillment, joy, and success.</p>
+            
+            <p class="display-6 font-weight-bold mt-10">
+              Hi. I'm Ryan.
+            </p>
+            
+            <p>The question that drives my work is, <span class="font-weight-bold">"What do you really want?"</span> I make and teach at the intersection of product management, organizational behavior, and learning. The result is a hands-on, experience-based approach to help companies, teams, and individuals find value by answering that question through sprints, experimentation, and prototyping.</p>
+
+            <p>I'm the co-founder of <a href="https://sprintwell.com" target="_blank">Sprintwell</a>. Former product manager at LinkedIn, director of product at Degreed, and BYU MBA.</p>
+            <p>You can find me on <a href="https://linkedin.com/in/ryanseamons/" target="_blank">LinkedIn</a> and <a href="https://twitter.com/ryanseamons" target="_blank">Twitter</a>.</p>
+
+            <p class="display-6 font-weight-bold mt-10">
+              Join me.
+            </p>
+            
+            <p>Each Sunday I send out the free <a href="https://ryanseamons.substack.com/" target="_blank">"What do you want?" Newsletter</a>. My readers want to make a difference by improving the way they build products and lead teams.</p>
+
+            <p>Also check out my <a href="articles">latest articles</a> as well as <a href="library">the vault</a>, a curated set of books/videos/articles that I've found most helpful in my personal + professional journey.</p>
+
+            <p>So, what do you want? <a href="https://linkedin.com/in/ryanseamons/" target="_blank">Reach out</a> and let me know.</p>
+
+            <!-- Signature font https://www.dafont.com/andi-signature.font?text=Ryan -->
+            <img src="assets/img/signature.svg" class="signature-color" alt="">
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- FOOTER
+    ================================================== -->
+    <footer class="py-8 py-md-11 bg-gray-200">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4 col-lg-3">
+        
+            <!-- Brand -->
+            <h3 class="text-muted">Ryan Seamons</h3>
+
+            <!-- <a href="https://ryanseamons.com"><img alt="Ryan Seamons" src="https://miro.medium.com/fit/c/256/256/0*2qyGqNHdt9XBeK_2.jpeg" class="rounded-circle" width="34" height="34"></a> -->
+                        
+            <!-- Social -->
+            <ul class="list-unstyled list-inline list-social mb-6 mb-md-0">
+              <li class="list-inline-item list-social-item mr-3">
+                <a href="http://twitter.com/ryanseamons" target="_blank"><i class="fab fa-2x fa-twitter"></i></a>
+              </li>
+              <li class="list-inline-item list-social-item mr-3">
+                <a href="http://linkedin.com/in/ryanseamons" target="_blank"><i class="fab fa-2x fa-linkedin"></i></a>
+              </li>
+            </ul>
+
+          </div>
+          <div class="col-6 col-md-4 col-lg-4">
+        
+            <!-- Heading -->
+            <h6 class="font-weight-bold text-uppercase text-gray-700">
+              <!-- Products -->
+            </h6>
+
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+              <li class="mb-3">
+                <a href="articles" class="text-reset">
+                  Articles
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="vault" class="text-reset">
+                  The Vault
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="events" class="text-reset">
+                  Events
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="https://ryanseamons.substack.com/" class="text-reset" target="_blank">
+                  Newsletter 
+                </a>
+              </li>
+            </ul>
+
+          </div>
+    <!--       <div class="col-6 col-md-4 col-lg-2">
+        
+            <h6 class="font-weight-bold text-uppercase text-gray-700">
+              Services
+            </h6>
+
+            <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Documentation
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Changelog
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Pagebuilder
+                </a>
+              </li>
+              <li>
+                <a href="#!" class="text-reset">
+                  UI Kit
+                </a>
+              </li>
+            </ul>
+
+          </div>
+          <div class="col-6 col-md-4 offset-md-4 col-lg-2 offset-lg-0">
+        
+            <h6 class="font-weight-bold text-uppercase text-gray-700">
+              Connect
+            </h6>
+
+            <ul class="list-unstyled text-muted mb-0">
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Page Builder
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  UI Kit
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Styleguide
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Documentation
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Changelog
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Documentation
+                </a>
+              </li>
+              <li>
+                <a href="#!" class="text-reset">
+                  Changelog
+                </a>
+              </li>
+            </ul>
+
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+        
+            <h6 class="font-weight-bold text-uppercase text-gray-700">
+              Legal
+            </h6>
+
+            <ul class="list-unstyled text-muted mb-0">
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Documentation
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Changelog
+                </a>
+              </li>
+              <li>
+                <a href="#!" class="text-reset">
+                  Pagebuilder
+                </a>
+              </li>
+            </ul>
+
+          </div> -->
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </footer>
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    <!-- Libs JS -->
+    <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/libs/flickity/dist/flickity.pkgd.min.js"></script>
+    <script src="./assets/libs/flickity-fade/flickity-fade.js"></script>
+    <script src="./assets/libs/aos/dist/aos.js"></script>
+    <script src="./assets/libs/smooth-scroll/dist/smooth-scroll.min.js"></script>
+    <script src="./assets/libs/jarallax/dist/jarallax.min.js"></script>
+    <script src="./assets/libs/jarallax/dist/jarallax-video.min.js"></script>
+    <script src="./assets/libs/jarallax/dist/jarallax-element.min.js"></script>
+    <script src="./assets/libs/typed.js/lib/typed.min.js"></script>
+    <script src="./assets/libs/countup.js/dist/countUp.min.js"></script>
+    <script src="./assets/libs/highlightjs/highlight.pack.min.js"></script>
+    <script src="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
+    <script src="./assets/libs/isotope-layout/dist/isotope.pkgd.min.js"></script>
+    <script src="./assets/libs/imagesloaded/imagesloaded.pkgd.min.js"></script>
+
+    <!-- Map -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+
+    <!-- Theme JS -->
+    <script src="./assets/js/theme.min.js"></script>
+
+
+  </body>
 </html>
