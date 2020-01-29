@@ -1,0 +1,102 @@
+// 
+// user.scss
+// Use this to write your custom SCSS
+//
+
+a, .text-primary {
+	color: $primary !important;
+}
+
+a:hover, .nav-link:hover {
+	text-decoration: underline;
+}
+
+.btn-primary {
+	background-color: $primary;
+}
+.signature-color {
+	filter: invert(54%) sepia(96%) saturate(4990%) hue-rotate(349deg) brightness(95%) contrast(87%);
+}
+
+.navbar-brand-img {
+	max-height: 3.5em;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;	
+	}
+
+.blog-article {
+
+	p { 
+
+	}
+
+	h1 {
+		font-size: 2.5em;
+	}
+
+	img {
+		max-width: 100%;
+    	height: auto;
+		@extend .lift;
+		@extend .rounded;
+
+	}
+
+	blockquote {
+		border-left: 10px solid $primary;
+		padding-left: 20px;
+	    margin-left: -30px;
+	}
+	// from https://css-tricks.com/snippets/css/simple-and-nice-blockquote-styling/#article-header-id-0
+
+	h2 {
+		margin-top: 60px;
+		font-weight: 600;
+	}
+
+	.footnote {
+		font-size: 1em;
+		margin-bottom: 0;
+		color: #aaaaaa;
+	}
+
+}
+
+
+p {
+	color: #323232;
+	font-size: 1.3em;
+	font-weight: 400;
+	line-height: 1.65em;
+	margin-bottom: 30px;
+}
+li {
+	color: #323232;
+	font-size: 1.3em;
+	font-weight: 400;
+}
+h1, h2, h3, h4, h5, h6 {
+	color: #4a4a4a;
+}
+
+.list-social-item a {
+	color: #869AB8;
+}
+
+.list-social-item a img {
+	vertical-align: bottom;
+}
+
+a:hover i.fa-linkedin          	{ color: #0077B5; }
+a:hover i.fa-twitter          	{ color: #1da1f2; }
+
+.article-date {
+	float: left;
+	width: 180px;
+}
+
+.article-title {
+
+}

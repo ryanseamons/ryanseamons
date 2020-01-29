@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    @@include("partials/head.html", {
+    "pageTitle": "Ryan Seamons"
+    })
+  </head>
+  <body>
+
+    <!-- MODALS
+    ================================================== -->
+    @@include("partials/modals.html")
+
+    <!-- NAVBAR
+    ================================================== -->
+    @@include("partials/navbar.html", {
+    "classList": "navbar-light bg-white border-bottom",
+    "type": "fixed"
+    })
+
+    <!-- WELCOME
+    ================================================== -->
+    <section class="pt-4 pt-md-11 mb-10">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-6 col-lg-10 offset-lg-1 order-md-1" data-aos="fade-up">
+
+            <h1 class="display-2 font-weight-bold text-center mb-10">
+              Events
+            </h1>
+
+            <p>
+              I speak. Here's where I'll add info about the topics I share with audiences, where I've spoken before, and how to get in touch.
+            </p>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- FOOTER
+    ================================================== -->
+    @@include("partials/footer.html", {
+    "classList": "bg-gray-200"
+    })
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("partials/scripts.html")
+
+  </body>
+</html>

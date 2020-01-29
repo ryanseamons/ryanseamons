@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    @@include("../partials/head.html", {
+    "pageTitle": "<!-- @@var= title -->",
+    "webRoot": ".."
+    })
+
+    <meta property="og:title" content="<!-- @@var = title -->"/>
+    <meta property="og:description" content="<!-- @@var = description -->"/>
+    <meta property="og:image" content="<!-- @@var = imageurl -->"/>
+    <meta property="og:url" content="<!-- @@var = url -->"/>
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:creator" content="@ryanseamons"/>
+    <meta name=”twitter:title” content=”<!-- @@var = title -->” />
+    <meta name=”twitter:description” content=”<!-- @@var = description -->” />
+    <meta name=”twitter:url” content=”<!-- @@var = url -->” />
+    <meta name=”twitter:image” content=”<!-- @@var = imageurl -->” />
+
+
+
+
+
+
+
+
+
+  </head>
+  <body>
+
+@@include("../partials/navbar.html", {
+"classList": "navbar-light bg-white border-bottom",
+"type": "fixed", 
+"webRoot": ".."
+})
+
+
+    <!-- HEADER
+    ================================================== -->
+    <section class="p-8 pt-md-11 mb-10">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-9 blog-article" data-aos="fade-up">
+
+					<!-- @@placeholder= blog-post -->
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+@@include("../partials/footer.html", {
+"classList": "bg-gray-200",
+"webRoot": ".."
+})
+
+@@include("../partials/scripts.html", { "webRoot": ".." })
+
+  </body>
+</html>
