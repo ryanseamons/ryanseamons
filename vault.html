@@ -529,12 +529,12 @@
               <!-- <h2 class="year display-4">Stories we tell ourselves</h2> -->
               <p>
               <ul>
-                <li><a href="https://www.youtube.com/watch?v=eC7xzavzEKY" target="_blank">This is Water</a> by David Foster. 10 minute watch, well worth the time</li>
+                <li><a href="https://www.youtube.com/watch?v=eC7xzavzEKY">This is Water</a> by David Foster. 10 minute watch, well worth the time</li>
                 <li><a href="https://www.ted.com/talks/susan_cain_the_power_of_introverts">The Power of Introverts</a> by Susan Cain</li>
-                <li><a href="https://fs.blog/mental-models/" target="_blank">Mental Models: The Best Way to Make Intelligent Decisions</a> by Shane Parrish, from Farnum Street</li>
+                <li><a href="https://fs.blog/mental-models/">Mental Models: The Best Way to Make Intelligent Decisions</a> by Shane Parrish, from Farnum Street</li>
                 <li><a href="https://firstround.com/review/radical-candor-the-surprising-secret-to-being-a-good-boss/">Radical Candor</a> by Kim Scott</li>
-                <li><a href="https://medium.com/the-mission/the-greatest-sales-deck-ive-ever-seen-4f4ef3391ba0" target="_blank">The Greatest Sales Deck Ever</a> by Andy Raskin</li>
-                <li><a href="https://seths.blog/2018/11/quality-and-effort/" target="_blank">Quality and Effort</a> by Seth Godin</li>
+                <li><a href="https://medium.com/the-mission/the-greatest-sales-deck-ive-ever-seen-4f4ef3391ba0">The Greatest Sales Deck Ever</a> by Andy Raskin</li>
+                <li><a href="https://seths.blog/2018/11/quality-and-effort/">Quality and Effort</a> by Seth Godin</li>
               </ul>
             </p>
 
@@ -573,7 +573,7 @@
 
             <!-- Text -->
             <p class="font-size-lg text-muted mb-6 mb-md-0">
-              A weekly newsletter for execution-oriented influencing
+              A weekly newsletter about execution-oriented influencing
             </p>
 
           </div>
@@ -786,6 +786,11 @@
 
     <!-- Theme JS -->
     <script src="./assets/js/theme.min.js"></script>
+
+    <script>	
+    	$("a[href^='https://']").attr("target","_blank");
+    	$("a[href^='http://']").attr("target","_blank");
+    </script>
 
 
   </body>
