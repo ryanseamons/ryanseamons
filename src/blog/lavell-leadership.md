@@ -1,3 +1,9 @@
+<!-- @@master = blog-template.html
+{"title":"3 leadership lessons from a legendary football coach", "description":"True leadership isn't just about winning. Secrets from legendary BYU football coach, LaVell Edwards.", "url":"https://ryanseamons.com/lavell-leadership"}
+-->
+
+<!-- @@block = blog-post-->
+
 # 3 leadership lessons from a legendary football coach (that have nothing to do with football)
 
 True leadership isn’t just about winning. Secrets from Legendary BYU College Football Coach, LaVell Edwards

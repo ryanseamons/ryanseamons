@@ -1,3 +1,9 @@
+<!-- @@master = blog-template.html
+{"title":"Why my boss telling me I couldn't do something was the best thing that ever happned to me", "description":"Choose experiences where you can learn the most, and then reframe the experience where you ask yourself 'What can I learn from this?'", "url":"https://ryanseamons.com/what-can-i-learn"}
+-->
+
+<!-- @@block = blog-post-->
+
 # Why my boss telling me I couldn’t do something was the best thing that ever happened to me
 
 “You just don’t have the skills to do this. Some people work for years to do this and I just don’t think you have what it takes.”
