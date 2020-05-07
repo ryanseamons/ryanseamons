@@ -97,11 +97,11 @@
                 The Vault
               </a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" id="navbarLandings" href="events">
                 Events
               </a>
-            </li>
+            </li> -->
           </ul>
 
           <!-- Button -->
@@ -164,51 +164,6 @@
       </div> <!-- / .container -->
     </section>
 
-    <section class="pt-7 pt-md-10 bg-light">
-      <div class="container py-6 py-md-8 border-top border-bottom border-gray-300">
-        <div class="row align-items-center">
-          <div class="col-12 col-md">
-
-            <!-- Heading -->
-            <h3 class="mb-1 font-weight-bold">
-              Get our stories delivered
-            </h3>
-
-            <!-- Text -->
-            <p class="font-size-lg text-muted mb-6 mb-md-0">
-              From us to your inbox weekly.
-            </p>
-
-          </div>
-          <div class="col-12 col-md-5">
-
-
-
-
-            <form action="//ryanseamons.us5.list-manage.com/subscribe/post?u=2c639e855d7783c0637736707&amp;id=681eb54a09" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="" _lpchecked="1">
-              <div class="row">
-                <div class="col">
-
-
-                  <!-- Begin Mailchimp Signup Form -->
-                  <input type="email" name="EMAIL" id="mce-EMAIL" class="form-control" id="mce-EMAIL" placeholder="Enter your email" autocomplete="off" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAkCAYAAADo6zjiAAAAAXNSR0IArs4c6QAAAbNJREFUWAntV8FqwkAQnaymUkpChB7tKSfxWCie/Yb+gbdeCqGf0YsQ+hU95QNyDoWCF/HkqdeiIaEUqyZ1ArvodrOHxanQOiCzO28y781skKwFW3scPV1/febP69XqarNeNTB2KGs07U3Ttt/Ozp3bh/u7V7muheQf6ftLUWyYDB5yz1ijuPAub2QRDDunJsdGkAO55KYYjl0OUu1VXOzQZ64Tr+IiPXedGI79bQHdbheCIAD0dUY6gV6vB67rAvo6IxVgWVbFy71KBKkAFaEc2xPQarXA931ot9tyHphiPwpJgSbfe54Hw+EQHMfZ/msVEEURjMfjCjbFeG2dFxPo9/sVOSYzxmAwGIjnTDFRQLMQAjQ5pJAQkCQJ5HlekeERxHEsiE0xUUCzEO9AmqYQhiF0Oh2Yz+ewWCzEY6aYKKBZCAGYs1wuYTabKdNNMWWxnaA4gp3Yry5JBZRlWTXDvaozUgGTyQSyLAP0dbb3DtQlmcan0yngT2ekE9ARc+z4AvC7nauh9iouhpcGamJeX8XF8MaClwaeROWRA7nk+tUnyzGvZrKg0/40gdME/t8EvgG0/NOS6v9NHQAAAABJRU5ErkJggg==&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
-                </div>
-                <div class="col-auto ml-n5">
-
-                  <!-- Button -->
-                  <button class="btn btn-primary" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" >
-                    Subscribe
-                  </button>
-
-                </div>
-              </div> <!-- / .row -->
-            </form>
-
-          </div>
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
-    </section>
-
     <!-- FOOTER
     ================================================== -->
     <!-- SHAPE
@@ -220,6 +175,48 @@
         </svg>
       </div>
     </div>
+
+    <!-- CTA -->
+    <section class="bg-gray-200">
+      <div class="container-lg">
+        <div class="row align-items-center">
+          <div class="col-12">
+
+            <!-- Divider -->
+            <hr class="border-gray-900 mt-0 mb-8">
+
+          </div>
+          <div class="col-md">
+
+            <!-- Heading -->
+            <h3 class="mb-0">
+              Join the <span class="text-primary">newsletter</span>
+            </h3>
+
+            <!-- Text -->
+            <p class="text-muted text-small mb-4 mb-md-0">
+              A weekly newsletter with ideas and stories from the intersection of product management, organizational behavior, and learning.
+            </p>
+
+          </div>
+          <div class="col-md-4">
+
+            <!-- Form -->
+            <form id="footer_email">
+              <input class="form-control" type="email" id="email" placeholder="Email address">
+              <p class="text-white-60" id="confirm_submission"></p>
+            </form>
+
+          </div>
+          <div class="col-12">
+
+            <!-- Divider -->
+            <hr class="border-gray-900 mb-0 mt-8">
+
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- CTA
     ================================================== -->
@@ -410,6 +407,30 @@
     	$("a[href^='http://']").attr("target","_blank");
     </script>
 
+
+    <script>
+    	$("#footer_email").submit(function(event){
+
+    		event.preventDefault(); //prevent default action 
+    		// $("#confirm_submission").html("Loading");
+    		var post_url = $(this).attr("action"); //get form action url
+    		var request_method = $(this).attr("method"); //get form GET/POST method
+    		var form_data = $(this).serialize(); //Encode form elements for submission
+		
+    		$.ajax({
+    			url: "https://formsubmit.co/ajax/ryanseamons@gmail.com",
+    			method: "POST",
+    			data: {email: $("#email").val()}
+    		}).done(function(response){ //
+    			$("#email").val("");
+    			$("#email").attr("placeholder", "Thanks for joining!");
+    		});
+    	});
+
+    	$.ajax({
+		
+    	});
+    </script>
 
   </body>
 </html>

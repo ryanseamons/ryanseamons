@@ -486,11 +486,11 @@
                 The Vault
               </a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" id="navbarLandings" href="events">
                 Events
               </a>
-            </li>
+            </li> -->
           </ul>
 
           <!-- Button -->
@@ -1045,6 +1045,48 @@
       </div>
     </div>
 
+    <!-- CTA -->
+    <section class="bg-gray-200">
+      <div class="container-lg">
+        <div class="row align-items-center">
+          <div class="col-12">
+
+            <!-- Divider -->
+            <hr class="border-gray-900 mt-0 mb-8">
+
+          </div>
+          <div class="col-md">
+
+            <!-- Heading -->
+            <h3 class="mb-0">
+              Join the <span class="text-primary">newsletter</span>
+            </h3>
+
+            <!-- Text -->
+            <p class="text-muted text-small mb-4 mb-md-0">
+              A weekly newsletter with ideas and stories from the intersection of product management, organizational behavior, and learning.
+            </p>
+
+          </div>
+          <div class="col-md-4">
+
+            <!-- Form -->
+            <form id="footer_email">
+              <input class="form-control" type="email" id="email" placeholder="Email address">
+              <p class="text-white-60" id="confirm_submission"></p>
+            </form>
+
+          </div>
+          <div class="col-12">
+
+            <!-- Divider -->
+            <hr class="border-gray-900 mb-0 mt-8">
+
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- CTA
     ================================================== -->
     <footer class="py-8 py-md-11 bg-gray-200">
@@ -1234,6 +1276,30 @@
     	$("a[href^='http://']").attr("target","_blank");
     </script>
 
+
+    <script>
+    	$("#footer_email").submit(function(event){
+
+    		event.preventDefault(); //prevent default action 
+    		// $("#confirm_submission").html("Loading");
+    		var post_url = $(this).attr("action"); //get form action url
+    		var request_method = $(this).attr("method"); //get form GET/POST method
+    		var form_data = $(this).serialize(); //Encode form elements for submission
+		
+    		$.ajax({
+    			url: "https://formsubmit.co/ajax/ryanseamons@gmail.com",
+    			method: "POST",
+    			data: {email: $("#email").val()}
+    		}).done(function(response){ //
+    			$("#email").val("");
+    			$("#email").attr("placeholder", "Thanks for joining!");
+    		});
+    	});
+
+    	$.ajax({
+		
+    	});
+    </script>
       
   </body>
 </html>

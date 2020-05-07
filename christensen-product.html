@@ -74,14 +74,6 @@
 
     <meta name="description" content="The way you architect your work and your life make a meaningful long-term difference, for success or failure. Influential innovation scholar, Clayton Christensen, teaches key lessons every product manager should know.">
 
-
-
-
-
-
-
-
-
   </head>
   <body>
 
@@ -119,11 +111,11 @@
             The Vault
           </a>
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link" id="navbarLandings" href="events">
             Events
           </a>
-        </li>
+        </li> -->
       </ul>
 
       <!-- Button -->
@@ -145,8 +137,9 @@
         <div class="row justify-content-center">
           <div class="col-12 col-md-10 col-lg-9 blog-article" data-aos="fade-up">
 
+          <h1>8 Lessons Product Managers Need to Learn From Clayton Christensen</h1>
+          <p>Ryan Seamons | <span class="text-muted">Reading time: 7 minutes</span></p><hr/><br/><br/>
 <!-- start blog-post -->
-<h1 id="8-lessons-product-managers-need-to-learn-from-clayton-christensen">8 Lessons Product Managers Need to Learn From Clayton Christensen</h1>
 <p>Clayton Christensen is one of the greatest business minds of our time. His recent passing caused me to reflect on all I learned from him. His life was dedicated to his family, his faith, and the theories he taught. He personified servant leadership.</p>
 <p><img src="../assets/img/posts/clayton-product/clayton1.jpg" alt=""></p>
 <p>Almost every single topic he taught is relevant to the work of product management. Here I share 8 key lessons I&#39;ve learned from his work that have helped me be a better product manager, leader, entrepreneur, husband and father. </p>
@@ -306,6 +299,48 @@
     </svg>
   </div>
 </div>
+
+<!-- CTA -->
+<section class="bg-gray-200">
+  <div class="container-lg">
+    <div class="row align-items-center">
+      <div class="col-12">
+
+        <!-- Divider -->
+        <hr class="border-gray-900 mt-0 mb-8">
+
+      </div>
+      <div class="col-md">
+
+        <!-- Heading -->
+        <h3 class="mb-0">
+          Join the <span class="text-primary">newsletter</span>
+        </h3>
+
+        <!-- Text -->
+        <p class="text-muted text-small mb-4 mb-md-0">
+          A weekly newsletter with ideas and stories from the intersection of product management, organizational behavior, and learning.
+        </p>
+
+      </div>
+      <div class="col-md-4">
+
+        <!-- Form -->
+        <form id="footer_email">
+          <input class="form-control" type="email" id="email" placeholder="Email address">
+          <p class="text-white-60" id="confirm_submission"></p>
+        </form>
+
+      </div>
+      <div class="col-12">
+
+        <!-- Divider -->
+        <hr class="border-gray-900 mb-0 mt-8">
+
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- CTA
 ================================================== -->
@@ -494,6 +529,30 @@
 	$("a[href^='http://']").attr("target","_blank");
 </script>
 
+
+<script>
+	$("#footer_email").submit(function(event){
+
+		event.preventDefault(); //prevent default action 
+		// $("#confirm_submission").html("Loading");
+		var post_url = $(this).attr("action"); //get form action url
+		var request_method = $(this).attr("method"); //get form GET/POST method
+		var form_data = $(this).serialize(); //Encode form elements for submission
+		
+		$.ajax({
+			url: "https://formsubmit.co/ajax/ryanseamons@gmail.com",
+			method: "POST",
+			data: {email: $("#email").val()}
+		}).done(function(response){ //
+			$("#email").val("");
+			$("#email").attr("placeholder", "Thanks for joining!");
+		});
+	});
+
+	$.ajax({
+		
+	});
+</script>
 
   </body>
 </html>
