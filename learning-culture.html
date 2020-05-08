@@ -268,7 +268,7 @@
 
         <!-- Form -->
         <form id="footer_email">
-          <input class="form-control" type="email" id="email" placeholder="Email address">
+          <input class="form-control" type="email" id="footer_input" placeholder="Email address">
           <p class="text-white-60" id="confirm_submission"></p>
         </form>
 
@@ -483,10 +483,10 @@
 		$.ajax({
 			url: "https://formsubmit.co/ajax/dcba52e2d7c9b63f4164d5cafdefb966",
 			method: "POST",
-			data: {email: $("#email").val()}
+			data: {email: $("#footer_input").val()}
 		}).done(function(response){ //
-			$("#email").val("");
-			$("#email").attr("placeholder", "Thanks for joining!");
+			$("#footer_input").val("");
+			$("#footer_input").attr("placeholder", "Thanks for joining!");
 		});
 	});
 	$("#inline_email").submit(function(event){
@@ -500,10 +500,10 @@
 		$.ajax({
 			url: "https://formsubmit.co/ajax/dcba52e2d7c9b63f4164d5cafdefb966",
 			method: "POST",
-			data: {email: $("#email").val()}
+			data: {email: $("#inline_input").val()}
 		}).done(function(response){ //
-			$("#email").val("");
-			$("#email").attr("placeholder", "Thanks for joining!");
+			$("#inline_input").val("");
+			$("#inline_input").attr("placeholder", "Thanks for joining!");
 		});
 	});
 
