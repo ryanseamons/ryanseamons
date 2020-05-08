@@ -480,7 +480,24 @@ Having books around increasing the chance you’ll pick one up. I have them on m
 		var form_data = $(this).serialize(); //Encode form elements for submission
 		
 		$.ajax({
-			url: "https://formsubmit.co/ajax/ryanseamons@gmail.com",
+			url: "https://formsubmit.co/ajax/dcba52e2d7c9b63f4164d5cafdefb966",
+			method: "POST",
+			data: {email: $("#email").val()}
+		}).done(function(response){ //
+			$("#email").val("");
+			$("#email").attr("placeholder", "Thanks for joining!");
+		});
+	});
+	$("#inline_email").submit(function(event){
+
+		event.preventDefault(); //prevent default action 
+		// $("#confirm_submission").html("Loading");
+		var post_url = $(this).attr("action"); //get form action url
+		var request_method = $(this).attr("method"); //get form GET/POST method
+		var form_data = $(this).serialize(); //Encode form elements for submission
+		
+		$.ajax({
+			url: "https://formsubmit.co/ajax/dcba52e2d7c9b63f4164d5cafdefb966",
 			method: "POST",
 			data: {email: $("#email").val()}
 		}).done(function(response){ //
@@ -489,9 +506,6 @@ Having books around increasing the chance you’ll pick one up. I have them on m
 		});
 	});
 
-	$.ajax({
-		
-	});
 </script>
 
   </body>
